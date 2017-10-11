@@ -1,5 +1,30 @@
-<% if current_user %>
-  Hello, <%= current_user.name %>
-<% else %>
-  <%= link_to "Sign in with Twitter", twitter_login_path %>
-<% end %>
+<nav class="navbar navbar-light bg-dark justify-content-left" style='color: #d9d9d9;'>
+	<a class="navbar-brand"><%= link_to "(Github ICON)", authorized_index_path %></a>
+  <a class="navbar-brand form-inline">
+	<input class="form-control mr-sm-2 left-justify text-secondary bg-dark" type="text" placeholder="Search GitHub" aria-label="Search"></a>
+	<div style="margin-right: 10em;">
+		<ul>
+			<ui><a class="nav-item right-bump">Pull Requests</a></ui>
+			<ui><a class="right-bump">Issues</a></ui>
+			<ui><a class="right-bump">Marketplace</a></ui>
+			<ui><a class="right-bump">Explore</a></ui>
+		</ul>
+	</div>
+  <ul>
+  <form class="form-inline collapse navbar-collapse">
+    <ui class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      DERP</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">New repository</a>
+          <a class="dropdown-item" href="#">Import repository</a>
+          <a class="dropdown-item" href="#">New gist</a>
+          <a class="dropdown-item" href="#">New orginization</a>
+      </div>
+    </ui>
+  </ul>
+  </div>
+  </form>
+  
+		
+</nav>
