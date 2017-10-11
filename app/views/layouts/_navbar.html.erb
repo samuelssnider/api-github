@@ -1,0 +1,5 @@
+<% if current_user %>
+  Hello, <%= current_user.name %>
+<% else %>
+  <%= link_to "Sign in with Twitter", twitter_login_path %>
+<% end %>
