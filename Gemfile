@@ -32,6 +32,7 @@ gem 'figaro'
 gem 'faraday'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.beta'
+gem 'rspec-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

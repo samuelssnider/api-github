@@ -6,4 +6,5 @@ class AtYourService
       faraday.headers["X-API-Key"] = ENV["github_key"]
 			faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
 		end
+	end
 end
