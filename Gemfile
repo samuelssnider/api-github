@@ -31,6 +31,7 @@ gem 'omniauth-github'
 gem 'figaro'
 gem 'faraday'
 gem 'jquery-rails'
+gem 'bootstrap-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
