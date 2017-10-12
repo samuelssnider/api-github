@@ -9,7 +9,6 @@ describe 'as a guest i can login as a user using github' do
 		.and_return(JSON.parse(Helpers.home_api_json.to_json))
 		ats = AtYourService.new(User.first).api_home
 		expect(ats["current_user_url"]).to eq("https://api.github.com/user")
-		binding.pry
 	end
 end
 

@@ -21,4 +21,8 @@ class User < ApplicationRecord
     user.save
     user
   end
+	
+	def followers(uid)
+		AtYourService.find_followers(uid)
+	end
 end
