@@ -7,4 +7,7 @@ class AtYourService
 			faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
 		end
 	end
+	
+	def api_home
+	end
 end
