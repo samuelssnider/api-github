@@ -39,4 +39,8 @@ class AtYourService
 		@user = User.find_by(uid: uid)
 	end
 	
+	def timeline
+		parse_url("timeline/?access_token=#{user.oauth_token}")
+	end
+	
 end
