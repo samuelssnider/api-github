@@ -30,4 +30,12 @@ class User < ApplicationRecord
 	def repos
 		AtYourService.new(self).repos
 	end
+	
+	def followers
+		AtYourService.new(self).followers
+	end
+	
+	def following
+		AtYourService.new(self).following
+	end
 end

@@ -20,11 +20,19 @@ class AtYourService
 	end
 	
 	def starred
-		parse_url("users/#{user.user_name}/starred")
+		parse_url("users/#{user.user_name}/starred").map{|repo| [repo["name"], repo["owner"]["url"]]}
 	end
 	
 	def repos
 		parse_url("users/#{user.user_name}/repos").map{|repo| [repo["name"], repo["html_url"]]}
+	end
+	
+	def followers
+		parse_url("users/#{user.user_name}/followers").map{|user| [user["login"], user["html_url"]]}
+	end
+	
+	def following
+		parse_url("users/#{user.user_name}/following").map{|user| [user["login"], user["html_url"]]}
 	end
 	
 	def self.set_user(uid)

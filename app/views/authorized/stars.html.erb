@@ -19,7 +19,7 @@
 				<a class="nav-item"><%= link_to "Following", authorized_following_path %></a>
 			</nav>
 			<ul class="try">
-				<% current_user.repos.each do |repo| %>
+				<% current_user.starred.each do |repo| %>
 				<li><%= link_to repo.first, repo.last %></li>
 				<% end %>
 			</ul>
