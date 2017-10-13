@@ -22,7 +22,12 @@ class User < ApplicationRecord
     user
   end
 	
-	def followers(uid)
-		AtYourService.find_followers(uid)
+	
+	def starred
+		AtYourService.new(self).starred
+	end
+	
+	def repos
+		AtYourService.new(self).repos
 	end
 end

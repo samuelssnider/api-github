@@ -1,5 +1,6 @@
 <%= render 'layouts/navbar' %>
 
+
 <div class="container" >
 	<div class ="row text-align">
 		<div class= "twenty-pct">
@@ -19,7 +20,12 @@
 				<a class="nav-item">Followers</a>
 				<a class="nav-item">Following</a>
 			</nav>
+			<ul class="try">
+				<% current_user.repos.each do |repo| %>
+				<li><%= link_to repo.first, repo.last %></li>
+				<% end %>
+			</ul>
 		</div>
 	</div>
 </div>
-<%= current_user.followers(current_user.uid) %>
+
